@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins&display=swap');
+
+* { margin: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+
+:root{
+  --title-color: hsl(218, 44%, 22%); /* Dark blue */
+  --text-color: hsl(220, 15%, 55%); /* Grayish blue */
+  
+  --bg-color: hsl(212, 45%, 89%); /* Light gray */
+  --box-color: hsl(0, 0%, 100%); /* White */
+  --box-shadow-clr: 0px 10px 20px rgb(12% 20% 32% / 10%); /* Dark blue */
+}
+
+body {
+  color: var(--title-color);
+  background-color: var(--bg-color);
+  font-family: Outfit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr {
+  background-color: var(--box-color);
+  width: min(90%, 400px); /* width is 90% until it reaches 400px */
+  padding: 1rem;
+  border-radius: 1.5em;
+  box-shadow: var(--box-shadow-clr);
+}
+
+.qr__image {
+  width: 100%;
+  border-radius: 0.675em;
+}
+
+.qr__content {
+  display: grid;
+  gap: 1.2rem;
+  padding-block: 1.4rem; /* padding-block = padding top and bottom */
+  width: min(90%, 400px); /* width is 90% until it reaches 400px */
+  margin: auto;
+  text-align: center;
+}
+
+.qr__title {
+  font-weight: 700; /* informative, not necessary because h2 are already Bold */
+}
+  
+.qr__text {
+  color: var(--text-color);
+  font-weight: 400; /* informative, paragraphs already have Regular weight */
+  font-size: 15px;
+}
